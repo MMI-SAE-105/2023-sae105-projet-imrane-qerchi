@@ -3,11 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Page d'accueil</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
+    <!-- En-tête de la page -->
+    <header>
+
+        <div class="header__start">
+            <a href="/">
+                <img src="/public/icones/logo.svg" alt="Logo du site Web">
+            </a>
+        </div>
+
+        <div class="header__end">
+
+            <!-- Menu principal -->
+            <nav class="header__menu menu">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="#">The quote - Unclouded by hate</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">The movie - <i>Princess Mononoke</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">The director - Hayao Miyazaki</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">The music - <i>Hime</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">The book - <i>Vinland Saga</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Au-delà</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Glossary</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+
+        </div>
+
+    </header>
+    <!-- Fin de l'en-tête de page -->
     
+    <!-- Contenu principal -->
+    <main>
+        <!-- Haut de la page -->
+        <div class="hero">
+                <h1 class="hero__title>">UNCLOUDED BY HATE</h1>
+                <h3 class="hero__quote">« To see with eyes unclouded by hate. »</h3>
+                <p class="hero__credit">Ashitaka, <i>Princess Mononoke</i></p>
+                <div class="hero__img"><img src="/public/img/ahsitaka_homepage.webp" alt="Ashitaka"></div>
+        </div>
+        <!-- Fin du haut de la page -->
+
+        <!-- Introduction aux articles -->
+        <section>
+            <div class="section__title">
+                <h3 class="">Articles</h3>
+                <hr class="section__separator">
+            </div>
+
+            <article class="article__card card">
+                <img src="/public/img/quote_miniature.webp" alt="Miniature de la réplique" class="card__image">
+                    <div class="card__caption">
+                        <h4 class="card__title">The quote - Unclouded by hate</h4>
+                        <p class="card__description">The quote "To see with eyes unclouded by hate" from "Princess Mononoke" encapsulates the main characters' journey, Ashitaka to overcome hatred in a world filled with conflict.</p>
+                        <a href="#" class="card__link">READ MORE</a>
+                        <hr class="card__separator">
+                    </div>
+            </article>
+
+            <article class="article__card card">
+                <img src="/public/img/music_miniature.webp" alt="Miniature du film" class="card__image">
+                    <div class="card__caption">
+                        <h4 class="card__title">The movie - <i>Princess Mononoke</i></h4>
+                        <p class="card__description">Hayao Miyazaki's film "Princess Mononoke" delves into profound themes like nature, coexis-tence, and the complexity of characters in medieval Japan, delivering a non-dualistic narra-tive.</p>
+                        <a href="#" class="card__link">READ MORE</a>
+                        <hr class="card__separator">
+                    </div>
+            </article>
+
+            <article class="article__card card">
+                <img src="/public/img/director_miniature.webp" alt="Miniature du réalisateur" class="card__image">
+                    <div class="card__caption">
+                        <h4 class="card__title">The director - Hayao Miyazaki</h4>
+                        <p class="card__description">Japanese director Hayao Miyazaki started as an illustrator and founded Studio Ghibli, infu-sing ecological and pacifist themes into his works, leaving a lasting impact on Japanese anima-tion.</p>
+                        <a href="#" class="card__link">READ MORE</a>
+                        <hr class="card__separator">
+                    </div>
+            </article>
+
+            <article class="article__card card">
+                <img src="/public/img/music_miniature.webp" alt="Miniature de la musique" class="card__image">
+                    <div class="card__caption">
+                        <h4 class="card__title">The music - <i>Hime</i></h4>
+                        <p class="card__description">Joe Hisaishi's "Hime" music accompanies both the characters and viewers of "Princess Mono-noke", conveying the hero's quest for a gaze without hatred, providing a sense of serenity.</p>
+                        <a href="#" class="card__link">READ MORE</a>
+                        <hr class="card__separator">
+                    </div>
+            </article>
+
+            <article class="article__card card">
+                <img src="/public/img/book_miniature.webp" alt="Miniature du livre" class="card__image">
+                    <div class="card__caption">
+                        <h4 class="card__title">The book - <i>Vinland Saga</i></h4>
+                        <p class="card__description">Makoto Yukimura's <i>Vinland Saga</i> is a manga that immerses readers in the Viking era, delving into Thorfinn's quest and transformation, along with themes like vengeance and peace.</p>
+                        <a href="#" class="card__link">READ MORE</a>
+                        <hr class="card__separator">
+                    </div>
+            </article>
+
+        </section>
+        <!-- Fin de l'introduction aux articles -->
+
+    </main>
+    <!-- Fin du contenu principal -->
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        
+        <img src="/public/icones/logo.svg" alt="Logo du site Web" class="footer__logo">
+        <hr class="footer__separator">
+
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Other projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <p class="footer__contact">To contact me : <b><a href="lien-de-votre-choix" class="footer__link">imrane.qerchi@edu.univ-fcomte.fr</a></b></p>
+            <img src="/public/icones/logo_mmi.png" alt="Logo du BUT MMi" class="footer__icon">
+            <p class="footer__contact">Project carried out by Imrane QERCHI as part of an educational exercise at the <b><a href="lien-de-votre-choix" class="footer__link">MMi department of Montbéliard</b><a></b>.</p>
+        </div>
+    </footer>
+    <!-- Fin du pied de page -->
+
 </body>
 </html>
