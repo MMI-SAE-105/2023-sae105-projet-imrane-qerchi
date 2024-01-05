@@ -37,6 +37,38 @@
 
     </header>
     <!-- Fin de l'en-tête de page -->
+
+    <main>
+        <header class="top">
+            <h1 class="top__title">Contact</h1>
+        </header>
+
+        <p>Pour toute réclamation, nous vous invitons à remplir ce formulaire de contact :</p>
+        
+        <form action="#" method="post">
+        
+          <div class="form__case">
+            <label for="nom">Votre nom :</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Pierre Martin" required>
+          </div>
+          
+          <div class="form__case">
+            <label for="email">Votre adresse e-mail :</label><br>
+            <input type="email" id="email" name="email" placeholder="abc@123.com" required>
+          </div>
+          
+          <div class="form__case">
+            <label for="message">Votre message :</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Écrivez votre message..." required></textarea>
+          </div>
+          
+          <div class="form__button">
+            <input type="submit" value="Envoyer">
+          </div>
+          
+        </form>
+        
+    </main>
     
     <!-- Pied de page -->
     <footer class="footer">
