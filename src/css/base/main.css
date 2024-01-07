@@ -1,10 +1,77 @@
-/* Format des images*/
-
 img {
     max-width: 100%;
 }
 
-/* Couleur du background*/
 body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
     background-color: #FFFFFF;
+
+}
+
+h1 {
+    font-family: 'Optimus Princeps', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+h2 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+h3 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.container {
+    padding-left: var(--space3x);
+    padding-right: var(--space3x);
+  }
+
+.noscroll,
+.noscroll body {
+  overflow: hidden;
 }
