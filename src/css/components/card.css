@@ -1,0 +1,42 @@
+.introduction__title {
+    text-align: center;
+    }
+
+.article__card.card {
+    padding-bottom: 80px;
+  }
+
+.card__caption {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -120px;
+    max-width: calc(100% - 90px);
+    text-align: center;
+    background-color: rgba(255,255,255,0.85);
+  }
+  
+.card__image {
+    weight : 357px;
+    height: 230px;
+    object-fit: cover;
+  }
+  
+  .card__link {
+}
+
+.card__title {
+    text-align: center;
+  }
+  
+.card__description {
+    padding-top: 30px ; /* Voir avec M.Senente */
+    margin: 5px auto;
+  }
+  
+.card__separator {
+    width: 79px;
+    height: 1px;
+    top: 394px;
+    left: 57px;
+    object-fit: cover;
+  }
