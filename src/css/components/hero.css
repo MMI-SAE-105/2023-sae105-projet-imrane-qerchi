@@ -1,0 +1,20 @@
+.hero {
+    position: relative;
+    background-color: var(--brand-violet);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: var(--space5x);
+  }
+
+  .hero__img {
+    position: absolute;
+    weight : 375px;
+    height: 752px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
