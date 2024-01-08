@@ -9,8 +9,7 @@
 </head>
 <body x-data="{ atTop: true }">
     <!-- En-tête de la page -->
-    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop 
-    }">
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
         <div class="header__start">
             <a href="/fr/index.html">
@@ -25,9 +24,9 @@
             <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
             <span class="menu-btn__bar"></span>
-        </button>
+            </button>
 
-        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link" href="/fr/Articles/replique.html">La réplique -<br>Un regard sans haine</a></li>
                     <li class="menu__item"><a class="menu__link" href="/fr/Articles/film.html">Le film -<br><i>Princesse Mononoké</i></a></li>

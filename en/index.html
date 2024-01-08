@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
-<body>
+<body x-data="{ atTop: true }">
     <!-- En-tête de la page -->
-    <header>
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
         <div class="header__start">
             <a href="/">
@@ -20,7 +20,13 @@
         <div class="header__end">
 
             <!-- Menu principal -->
-            <nav class="header__menu menu">
+            
+            <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="#">The quote - Unclouded by hate</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">The movie - <i>Princess Mononoke</i></a></li>
