@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
-<body>
+<body x-data="{ atTop: true }">
     <!-- En-tête de la page -->
-    <header class="header container">
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop 
+    }">
 
         <div class="header__start">
             <a href="/fr/index.html">
@@ -21,17 +22,18 @@
 
             <!-- Menu principal -->
 
-            <button class="header__menu-btn menu-btn" x-data="{ isOpen: false }" @click="isOpen = !isOpen">
-                <span class="menu-btn__bar"></span>
-            </button>
+            <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
 
-            <nav class="header__menu menu" x-data="{ isOpen: false }" x-show="isOpen" @click.away="isOpen = false">
-                <ul class="menu__list list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/replique.html">La réplique - Un regard sans haine</a></li>
-                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/film.html">Le film - <i>Princesse Mononoké</i></a></li>
-                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/realisateur.html">Le réalisateur - Hayao Miyazaki</a></li>
-                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/musique.html">La musique - <i>Hime</i></a></li>
-                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/livre.html">Le livre - <i>Vinland Saga</i></a></li>
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/replique.html">La réplique -<br>Un regard sans haine</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/film.html">Le film -<br><i>Princesse Mononoké</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/realisateur.html">Le réalisateur -<br>Hayao Miyazaki</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/musique.html">La musique -<br><i>Hime</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/Articles/livre.html">Le livre -<br><i>Vinland Saga</i></a></li>
                     <li class="menu__item"><a class="menu__link" href="/fr/au_dela.html">Au-delà</a></li>
                     <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
                 </ul>
