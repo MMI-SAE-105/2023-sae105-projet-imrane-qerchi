@@ -1,0 +1,24 @@
+    .carrousel_parent-ecrans {
+      /* aligne horizontalement les enfants */
+      display: flex;
+      /* largeur du parent */
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    }
+    .carrousel_ecran {
+        scroll-snap-align: start;
+      /* largeur du parent pour chaque enfant */
+      width: 100%;
+      /* permet de garder toute la largeur du parent */
+      flex: none;
+    }
+    .carrousel_ecran figure {
+      /* enlève les marges par défaut */
+      margin: 0;
+    }
+
+    .carrousel {
+      position: relative;
+    }
