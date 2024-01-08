@@ -98,3 +98,11 @@
   font-weight: 500;
   padding-top: 2rem;
 }
+
+.lang__button {
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin-right: -140px;
+  margin-top: 7%;
+}
