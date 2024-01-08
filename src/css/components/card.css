@@ -16,14 +16,10 @@
   }
   
 .card__image {
-    weight : 357px;
     height: 230px;
     object-fit: cover;
     align-items: center;
   }
-  
-  .card__link {
-}
 
 .card__title {
     padding-top: 20px;

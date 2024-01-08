@@ -1,6 +1,6 @@
 .article__button {
     display: inline-block;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     border: 2px solid #000;
     color: #000;
     text-align: center;
@@ -12,7 +12,7 @@
 
 .article__button__back {
     display: inline-block;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     border: 2px solid #000;
     color: #000;
     text-align: center;
@@ -20,4 +20,8 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
+}
+
+.classic__arrow {
+    height : 150%;
 }
