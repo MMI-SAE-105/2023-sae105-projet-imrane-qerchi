@@ -1,6 +1,6 @@
 .article__button {
     display: inline-block;
-    padding: 10px 20px;
+    padding-bottom: 50px;
     border: 2px solid #000;
     color: #000;
     text-align: center;
@@ -8,4 +8,16 @@
     cursor: pointer;
     align-items: center;
   justify-content: center;
+}
+
+.article__button__back {
+    display: inline-block;
+    padding-bottom: 50px;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
