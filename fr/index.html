@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unclouded by hate - Page d'accueil</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <script defer src="https://unpkg.com/alpinejs"></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
     <!-- En-tête de la page -->
-    <header>
+    <header class="header container">
 
         <div class="header__start">
             <a href="/fr/index.html">
@@ -20,7 +20,12 @@
         <div class="header__end">
 
             <!-- Menu principal -->
-            <nav class="header__menu menu">
+
+            <button class="header__menu-btn menu-btn" x-data="{ isOpen: false }" @click="isOpen = !isOpen">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" x-data="{ isOpen: false }" x-show="isOpen" @click.away="isOpen = false">
                 <ul class="menu__list list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="/fr/Articles/replique.html">La réplique - Un regard sans haine</a></li>
                     <li class="menu__item"><a class="menu__link" href="/fr/Articles/film.html">Le film - <i>Princesse Mononoké</i></a></li>
@@ -42,7 +47,7 @@
     <main>
         <!-- Haut de la page -->
         <div class="hero">
-                <h1 class="hero__title>">UNCLOUDED BY HATE</h1>
+                <h1 class="hero__title">UNCLOUDED BY HATE</h1>
                 <h3 class="hero__quote">« Je dois porter sur le monde un regard sans haine. »</h3>
                 <p class="hero__credit">Ashitaka, <i>Princesse Mononoké</i></p>
                 <div class="hero__img"><img src="/public/img/ahsitaka_homepage.webp" alt="Ashitaka"></div>

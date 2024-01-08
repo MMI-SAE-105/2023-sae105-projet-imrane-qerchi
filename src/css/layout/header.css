@@ -1,27 +1,30 @@
-/* La position "fixed" permet à l'élément d'être toujours présent à l'écran, ici en haut à gauche et couvre toute la largeur de l'écran.
-Flex sert à positionner les éléments de l'en-tête (header__start et header__end) l'un à coté de l'autre alors que la valeur "space-between" de "justify-content" permet des les répartir de part et d'autre de l'écran (l'un à gauche, l'autre à droite)
-*/
+/* Header */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-    padding: var(--space2x) var(--space3x);
-    display: flex;
-    justify-content: space-between;
-    transition: all .3s ease-in-out;
-  }
-  
-  .header__start {
-    background-color: #28634F;
-  }
-  
-  .header__end {
-    display: flex;
-    gap: var(--space2x);
-  }
-  
-  .header__logo {
+  position: fixed absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: var(--space2x) var(--space3x);
+  display: flex;
+  justify-content: space-between;
+  background-color: #28634F; /* Changer la couleur de fond au besoin */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour un look plus profond */
+  transition: all 0.3s ease-in-out;
+}
 
-  }
+.header__start {
+  background-color: #28634F; /* Couleur de fond pour la section start */
+  padding: 0 var(--space3x); /* Ajout d'un padding pour l'espace autour du logo */
+}
+
+.header__end {
+  display: flex;
+  align-items: center; /* Centrer verticalement les éléments */
+  gap: var(--space2x); /* Espacement entre les éléments */
+}
+
+.header__logo {
+  max-width: 150px; /* Largeur maximale du logo */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+}
