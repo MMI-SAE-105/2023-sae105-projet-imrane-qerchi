@@ -1,40 +1,41 @@
-/* Style de base pour le conteneur hero */
 .hero {
-  position: relative; /* Permet de positionner les éléments enfants de manière absolue par rapport à ce conteneur */
-  width: 100%; /* ou toute autre largeur souhaitée */
-  height: auto; /* Ajuste la hauteur en fonction du contenu ou de la hauteur définie */
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-/* Style pour l'image */
 .hero__img img {
-  width: 100%; /* Ajuste la largeur de l'image au conteneur */
-  height: auto; /* Ajuste la hauteur automatiquement pour maintenir les proportions */
-  display: block; /* Pour assurer que l'image prend toute la largeur de son conteneur */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Style pour les titres et le paragraphe */
 .hero__title,
 .hero__quote,
 .hero__credit {
-  position: absolute; /* Position absolue par rapport au conteneur .hero */
-  color: white; /* Pour un texte lisible sur l'image, ajustez la couleur en fonction de votre image */
-  /* Ajustez les propriétés top, left, right ou bottom selon vos préférences pour placer les éléments où vous le souhaitez */
+  position: absolute;
+  color: white;
 }
 
-/* Position spécifique pour chaque élément (vous pouvez ajuster ces valeurs comme vous le souhaitez) */
 .hero__title {
   text-align: center;
-  top: 150px; /* Exemple : positionnez le titre à 20 pixels du haut */
-  left: 20px; /* Exemple : positionnez le titre à 20 pixels de la gauche */
+  top: 150px;
+  left: 20px;
 }
 
 .hero__quote {
   text-align: center;
-  top: 300px; /* Exemple : positionnez la citation à 60 pixels du haut */
-  left: 20px; /* Exemple : positionnez la citation à 20 pixels de la gauche */
+  font-family: 'Mulish', sans-serif;
+  font-weight: 1200;
+  font-size: 20px;
+  top: 370px;
+  left: 20px;
+  margin-right: 8px;
 }
 
 .hero__credit {
-  bottom: 250px; /* Exemple : positionnez le crédit à 20 pixels du bas */
-  right: 20px; /* Exemple : positionnez le crédit à 20 pixels de la droite */
+  font-family: 'Mulish', sans-serif;
+  font-size: 12px;
+  bottom: 285px;
+  right: 20px;
 }
