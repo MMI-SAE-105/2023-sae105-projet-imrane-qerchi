@@ -35,6 +35,6 @@
 }
 
 .hero__credit {
-  bottom: 20px; /* Exemple : positionnez le crédit à 20 pixels du bas */
+  bottom: 250px; /* Exemple : positionnez le crédit à 20 pixels du bas */
   right: 20px; /* Exemple : positionnez le crédit à 20 pixels de la droite */
 }
