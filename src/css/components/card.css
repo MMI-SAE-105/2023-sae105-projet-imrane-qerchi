@@ -19,6 +19,7 @@
     weight : 357px;
     height: 230px;
     object-fit: cover;
+    align-items: center;
   }
   
   .card__link {
