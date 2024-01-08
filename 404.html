@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page non trouvée</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <h2>Page non trouvée</h2>
+        <form action="https://duckduckgo.com/" method="GET" 
+            x-data="{ q:'', }" 
+            x-on:submit="q = q + ' site:testnetlify.imrane-qerchi.fr'">
+            <label for="q">Texte à rechercher :</label>
+            <input type="text" id="q" name="q" x-model="q">
+            <button type="submit">Rechercher</button>
+        </form>
+</body>
+</html>
