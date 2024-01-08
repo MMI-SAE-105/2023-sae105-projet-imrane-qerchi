@@ -1,0 +1,76 @@
+.frise__parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 170px;
+    margin-bottom: 250px;
+}
+
+.frise_image_border_radius {
+    border-radius: 50%;
+    border: 15px solid #28634F;
+    margin-top: -50px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.frise__figure__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    right: 0;
+}
+
+.frise__figure__2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    margin-top: 350px;
+    left: 0;
+}
+
+.frise__figure__3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    margin-top: 620px;
+    right: 0;
+}
+
+.frise__figure__4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    margin-top: 890px;
+    left: 0;
+}
+
+.frise__figure__5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    margin-top: 1160px;
+    right: 0;
+}
+
+.frise_figcaption {
+    position: relative;
+    margin-top: -60px;
+    background-color: #5890C4;
+    border-radius: 2.5px;
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+}
