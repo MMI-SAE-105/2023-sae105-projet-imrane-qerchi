@@ -25,3 +25,21 @@
   padding-bottom: 2px;
   height: auto;
 }
+
+.top {
+  
+}
+
+.top__title {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.top__introduction {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}

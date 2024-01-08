@@ -1,0 +1,11 @@
+.article__button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+  justify-content: center;
+}

@@ -1,12 +1,37 @@
 .section {
-    position: relative;
-  }
+  position: relative;
+}
 
-  .section__separator {
-    width: 20%;
-    height: 1px;
-    margin-top: -18px;
-    margin-bottom: 50px;
-    background-color: black;
-    border: none; 
-  }
+.section__separator {
+  width: 20%;
+  height: 1px;
+  margin-top: -18px;
+  margin-bottom: 50px;
+  background-color: black;
+  border: none; 
+}
+
+.article__subtitle {
+  margin: 8px;
+}
+
+.article__separator {
+  width: 95%;
+  height: 1px;
+  background-color: black;
+  border: none; 
+}
+
+.article__texte {
+  margin: 8px;
+  padding-bottom: 15px;
+}
+
+.article__description {
+  margin-top: -14px;
+}
+
+.article__link {
+  padding-top: 20px;
+  margin: 8px;
+}
