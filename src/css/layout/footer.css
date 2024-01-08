@@ -4,19 +4,25 @@
 
 .footer__logo {
     display: flex;
-    weight : 122px;
-    height: 122px;
   }
 
-.footer__seperator {
-    border: 0;
-    height: 1px;
-    background-color: black;
-    margin: 20px 0;
+.footer__separator {
+  width: 90%;
+  height: 1px;
+  margin-top: -18px;
+  margin-bottom: 50px;
+  background-color: black;
+  border: none;
+}
+
+.footer__menu {
+  list-style: none;
 }
   
 .footer__contact {
     text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
   }
 
 .footer__icon {
