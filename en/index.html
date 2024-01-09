@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unclouded by hate - Home page</title>
+    <title>Unclouded by hate - Homepage</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
@@ -12,15 +12,17 @@
     <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
         <div class="header__start">
-            <a href="/">
+            <a href="/fr/index.html">
                 <img src="/public/icones/logo.svg" alt="Logo du site Web" class="header__logo">
             </a>
         </div>
 
+        <a href="/fr/index.html" class="lang__button">FR</a>
+
         <div class="header__end">
 
             <!-- Menu principal -->
-            
+
             <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
             <span class="menu-btn__bar"></span>
@@ -28,13 +30,13 @@
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#">The quote -<br>Unclouded by hate</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">The movie -<br><i>Princess Mononoke</i></a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">The director -<br>Hayao Miyazaki</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">The music -<br><i>Hime</i></a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">The book -<br><i>Vinland Saga</i></a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Beyond</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Glossary</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/quote.html">The quote -<br>Unclouded by hate</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/movie.html">The movie -<br><i>Princess Mononoke</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/director.html">The director -<br>Hayao Miyazaki</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/music.html">The music -<br><i>Hime</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/book.html">The book -<br><i>Vinland Saga</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/beyond.html">Beyond</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
                 </ul>
             </nav>
             <!-- Fin du menu principal -->
@@ -48,7 +50,7 @@
     <main>
         <!-- Haut de la page -->
         <div class="hero">
-                <h1 class="hero__title>">UNCLOUDED BY HATE</h1>
+                <h1 class="hero__title">UNCLOUDED BY HATE</h1>
                 <h3 class="hero__quote">"To see with eyes unclouded by hate."</h3>
                 <p class="hero__credit">Ashitaka, <i>Princess Mononoke</i></p>
                 <div class="hero__img"><img src="/public/img/ahsitaka_homepage.webp" alt="Ashitaka"></div>
@@ -58,57 +60,52 @@
         <!-- Introduction aux articles -->
         <section>
             <div class="section__title">
-                <h3 class="">Articles</h3>
+                <h3 class="introduction__title">Articles</h3>
                 <hr class="section__separator">
             </div>
 
             <article class="article__card card">
                 <img src="/public/img/quote_miniature.webp" alt="Miniature de la réplique" class="card__image">
                     <div class="card__caption">
-                        <h4 class="card__title">The quote - Unclouded by hate</h4>
+                        <h6 class="card__title">The quote -<br>Unclouded by hate</h6>
                         <p class="card__description">The quote "To see with eyes unclouded by hate" from "Princess Mononoke" encapsulates the main characters' journey, Ashitaka to overcome hatred in a world filled with conflict.</p>
-                        <a href="#" class="card__link">READ MORE</a>
-                        <hr class="card__separator">
+                        <a href="/en/articles/replique.html" class="card__link">READ MORE</a>
                     </div>
             </article>
 
             <article class="article__card card">
-                <img src="/public/img/music_miniature.webp" alt="Miniature du film" class="card__image">
+                <img src="/public/img/movie_miniature.webp" alt="Miniature du film" class="card__image">
                     <div class="card__caption">
-                        <h4 class="card__title">The movie - <i>Princess Mononoke</i></h4>
-                        <p class="card__description">Hayao Miyazaki's film "Princess Mononoke" delves into profound themes like nature, coexis-tence, and the complexity of characters in medieval Japan, delivering a non-dualistic narra-tive.</p>
-                        <a href="#" class="card__link">READ MORE</a>
-                        <hr class="card__separator">
+                        <h6 class="card__title">The movie -<br><i>Princess Mononoke</i></i></h6>
+                        <p class="card__description">Hayao Miyazaki's film "Princess Mononoke" delves into profound themes like nature, coexis-tence, and the complexity of characters in medieval Japan, delivering a non-dualistic narrative.</p>
+                        <a href="/en/articles/film.html" class="card__link">READ MORE</a>
                     </div>
             </article>
 
             <article class="article__card card">
                 <img src="/public/img/director_miniature.webp" alt="Miniature du réalisateur" class="card__image">
                     <div class="card__caption">
-                        <h4 class="card__title">The director - Hayao Miyazaki</h4>
-                        <p class="card__description">Japanese director Hayao Miyazaki started as an illustrator and founded Studio Ghibli, infu-sing ecological and pacifist themes into his works, leaving a lasting impact on Japanese anima-tion.</p>
-                        <a href="#" class="card__link">READ MORE</a>
-                        <hr class="card__separator">
+                        <h6 class="card__title">The director -<br>Hayao Miyazaki</h6>
+                        <p class="card__description">Japanese director Hayao Miyazaki started as an illustrator and founded Studio Ghibli, infu-sing ecological and pacifist themes into his works, leaving a lasting impact on Japanese animation.</p>
+                        <a href="/en/articles/realisateur.html" class="card__link">READ MORE</a>
                     </div>
             </article>
 
             <article class="article__card card">
                 <img src="/public/img/music_miniature.webp" alt="Miniature de la musique" class="card__image">
                     <div class="card__caption">
-                        <h4 class="card__title">The music - <i>Hime</i></h4>
+                        <h6 class="card__title">The music -<br><i>Hime</i></h6>
                         <p class="card__description">Joe Hisaishi's "Hime" music accompanies both the characters and viewers of "Princess Mono-noke", conveying the hero's quest for a gaze without hatred, providing a sense of serenity.</p>
-                        <a href="#" class="card__link">READ MORE</a>
-                        <hr class="card__separator">
+                        <a href="/en/articles/musique.html" class="card__link">READ MORE</a>
                     </div>
             </article>
 
             <article class="article__card card">
                 <img src="/public/img/book_miniature.webp" alt="Miniature du livre" class="card__image">
                     <div class="card__caption">
-                        <h4 class="card__title">The book - <i>Vinland Saga</i></h4>
+                        <h6 class="card__title">The book -<br><i>Vinland Saga</i></h6>
                         <p class="card__description">Makoto Yukimura's <i>Vinland Saga</i> is a manga that immerses readers in the Viking era, delving into Thorfinn's quest and transformation, along with themes like vengeance and peace.</p>
-                        <a href="#" class="card__link">READ MORE</a>
-                        <hr class="card__separator">
+                        <a href="/en/articles/livre.html" class="card__link">READ MORE</a>
                     </div>
             </article>
 
@@ -126,9 +123,9 @@
 
         <nav class="footer__menu">
             <ul class="list-unstyled">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Other projects</a></li>
+                <li><a href="/en/about.html">About us</a></li>
+                <li><a href="/en/contact.html">Contact</a></li>
+                <li><a href="/en/other_projects.html">Other projects</a></li>
             </ul>
         </nav>
 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unclouded by hate - Glossary</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body x-data="{ atTop: true }">
+    <!-- En-tête de la page -->
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img src="/public/icones/logo.svg" alt="Logo du site Web" class="header__logo">
+            </a>
+        </div>
+
+        <a href="/fr/glossaire.html" class="lang__button">FR</a>
+
+        <div class="header__end">
+
+            <!-- Menu principal -->
+
+            <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/quote.html">The quote -<br>Unclouded by hate</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/movie.html">The movie -<br><i>Princess Mononoke</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/director.html">The director -<br>Hayao Miyazaki</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/music.html">The music -<br><i>Hime</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/book.html">The book -<br><i>Vinland Saga</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/beyond.html">Beyond</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+
+        </div>
+
+    </header>
+    <!-- Fin de l'en-tête de page -->
+    
+    <main>
+        <header class="top">
+            <h2 class="top__title">Glossary</h2>
+        </header>
+
+        <div class="glossary__card">
+                <h7 class="glossary__title">Ashitaka</h7>
+                <p class="glossary__text">The main protagonist of the film "Princess Mononoke," a young cursed warrior seeking to lift his curse.</p>
+        </div>
+
+        <div class="glossary__card">
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Princesse Mononoke</h7>
+                    <p class="glossary__card">The eponymous character of the film of the same name, a young woman raised by wolves who strives to protect the forest from Dame Eboshi's industrial forces.</p>
+                </div>
+
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Lady Eboshi</h7>
+                    <p class="glossary__card">A character in "Princess Mononoke," the leader of an industrial forge in conflict with nature.</p>
+                </div>
+
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Deer God</h7>
+                    <p class="glossary__text">An iconic forest deity embodying nature and its mystical powers. It possesses the power of life and death.</p>
+                </div>
+
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Thorfinn</h7>
+                    <p class="glossary__text">The main character of "Vinland Saga," a young Viking warrior on a quest for vengeance.</p>
+                </div>
+                
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Thors Snoresson</h7>
+                    <p class="glossary__text">Thorfinn's father in "Vinland Saga" and a legendary former warrior who sought peace.</p>
+                </div>
+                
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Askeladd</h7>
+                    <p class="glossary__text">A key character in "Vinland Saga," a manipulative and complex Viking leader.</p>
+                </div>
+                
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Shonen</h7>
+                    <p class="glossary__text">A genre of manga and anime primarily aimed at young boys, featuring themes of adventure, friendship, and combat.</p>
+                </div>
+                
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Seinen</h7>
+                    <p class="glossary__text">A genre of manga and anime intended for an adult audience, characterized by more mature, complex, and darker themes.</p>
+                </div>
+                
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Weekly Shonen Magazine</h7>
+                    <p class="glossary__text">A popular weekly manga publication in Japan that features many shonen genre manga.</p>
+                </div>
+                
+                <div class="glossary__card">
+                    <h7 class="glossary__title">Ghibli (or sirocco)</h7>
+                    <p class="glossary__text">Refers to a warm wind from North Africa. It gave its name to the eponymous Studio, as Miyazaki is fascinated by this element, the wind.</p>
+                </div>        
+
+            </main>
+
+            <!-- Pied de page -->
+            <footer class="footer">
+        
+                <img src="/public/icones/logo.svg" alt="Logo du site Web" class="footer__logo">
+                <hr class="footer__separator">
+        
+                <nav class="footer__menu">
+                    <ul class="list-unstyled">
+                        <li><a href="/en/about.html">About us</a></li>
+                        <li><a href="/en/contact.html">Contact</a></li>
+                        <li><a href="/en/other_projects.html">Other projects</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="footer__contact">
+                    <p class="footer__contact">To contact me : <b><a href="mailto:imrane.qerchi@edu.univ-fcomte.fr" class="footer__link">imrane.qerchi@edu.univ-fcomte.fr</a></b></p>
+                    <img src="/public/icones/logo_mmi.png" alt="Logo du BUT MMi" class="footer__icon">
+                    <p class="footer__contact">Project carried out by Imrane QERCHI as part of an educational exercise at the <b><a href="https://mmimontbeliard.com/" class="footer__link">MMi department of Montbéliard</a></b>.</p>
+                </div>
+            </footer>
+            <!-- Fin du pied de page -->
+        
+</body>
+</html>

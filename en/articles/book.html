@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unclouded by hate - Vinland Saga</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body x-data="{ atTop: true }">
+    <!-- En-tête de la page -->
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img src="/public/icones/logo.svg" alt="Logo du site Web" class="header__logo">
+            </a>
+        </div>
+
+        <a href="/fr/articles/livre.html" class="lang__button">FR</a>
+
+        <div class="header__end">
+
+            <!-- Menu principal -->
+            
+            <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/quote.html">The quote -<br>Unclouded by hate</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/movie.html">The movie -<br><i>Princess Mononoke</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/director.html">The director -<br>Hayao Miyazaki</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/music.html">The music -<br><i>Hime</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/book.html">The book -<br><i>Vinland Saga</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/beyond.html">Beyond</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+
+        </div>
+
+    </header>
+    <!-- Fin de l'en-tête de page -->
+    
+    <!-- Contenu principal -->
+    <main>
+        <header class="top">
+            <h2 class="top__title">The book -<br><i>Vinland Saga</i></h2>
+            <p class="top__introduction">Makoto Yukimura's <i>Vinland Saga</i> is a manga that immerses readers in the Viking era, delving into Thorfinn's quest and transformation, along with themes like vengeance and peace.</p>
+        </header>
+
+        <section class="article">
+            <div>
+                <h5 class="article__subtitle">Introduction</h5>
+                <hr class="article__separator"> 
+                <p class="article__texte">In 2005, Vinland Saga made its debut in Weekly Shonen Magazine. It was written and illus-trated by Makoto Yukimura, a young, relatively unknown mangaka. Yukimura later revealed that his desire to become a mangaka was inspired by reading "Fist of the North Star." The themes of "strength" and "justice," which are so significant in the works of Buronson and Tet-suo Hara, reappear in Vinland Saga. While Vinland Saga is less gory, the violence in "Fist of the North Star" is somewhat similar.</p>
+            </div>
+
+            <div>
+                <figure class="article__figure">
+                <img src="/public/img/book_image1.webp" alt="Photo article livre" class="article__image__book">
+                <figcaption class="article__description">Thors telling Thorfinn that he has no enemies</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h5 class="article__subtitle">In context</h5>
+                <hr class="article__separator">
+                <p class="article__texte">This seinen manga is set in medieval Iceland during the Viking age, and it follows the adven-tures of young Thorfinn, the son of Thors, who becomes embroiled in the famous Icelandic sagas. In 2019, the manga was adapted into an anime series, further boosting its popularity. At first glance, the connection between the two works may seem slight, but hatred is the common thread running through them.</p>
+            </div>
+
+            <div>
+                <h5 class="article__subtitle">Similarities</h5>
+                <hr class="article__separator">
+                <p class="article__texte">Similar to Ashitaka, who must view the world without hatred, Thorfinn is tasked with having no enemies. This mission is given to him by his father, who, in the second volume, is killed by Askeladd's troops. The man known as the "Troll of Jom" then tells his son, "Listen well, Thor-finn! You have no enemies! No one has any enemies!" We can see the common thread bet-ween the two works: the main characters must rid their hearts of all hatred and animosity, even though the world they live in is filled with it.</p>
+            </div>
+
+            <div>
+                <figure class="article__figure">
+                <img src="/public/img/book_image2.webp" alt="Photo article livre" class="article__image__book">
+                <figcaption class="article__description">Thorfinn who declares that he has no enemies</figcaption>
+                </figure>
+            </div>
+            
+            <div>
+                <h5 class="article__subtitle">Deepening</h5>
+                <hr class="article__separator">
+                <p class="article__texte">Furthermore, this mission is not directly understood by our heroes and must be imparted by an external, wiser character. The village elder for Ashitaka and Thorfinn's father for him. This mission becomes the focal point of the work, dictating each of their actions. However, Thor-finn will take more time to understand that this philosophy must become his own and will spend most of his childhood and adolescence in battle. This leads him to injure the prince of Denmark, who makes him a slave. His condition as a slave allows him to gain perspective. He then declares, "I have no enemies," even as he is being beaten (cf. Volume 14, Chapter 96), finally grasping his late father's philosophy. Ashitaka, on the other hand, despite the difficulty of his quest, dedicates himself to it directly.</p>
+            </div>
+
+            <a href="https://www.vinlandsagamanga.net/manga/vinland-saga-chapter-1/" class="article__link">For more informations about Vinland Saga.</a>
+
+            <br>
+
+            <a href="/en/articles/music.html" class="article__button__back">The music -<br><i>Hime</i></a>
+        </section>
+
+    </main>
+    <!-- Fin du contenu principal -->
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        
+        <img src="/public/icones/logo.svg" alt="Logo du site Web" class="footer__logo">
+        <hr class="footer__separator">
+
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a href="/en/about.html">About us</a></li>
+                <li><a href="/en/contact.html">Contact</a></li>
+                <li><a href="/en/other_projects.html">Other projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <p class="footer__contact">To contact me : <b><a href="mailto:imrane.qerchi@edu.univ-fcomte.fr" class="footer__link">imrane.qerchi@edu.univ-fcomte.fr</a></b></p>
+            <img src="/public/icones/logo_mmi.png" alt="Logo du BUT MMi" class="footer__icon">
+            <p class="footer__contact">Project carried out by Imrane QERCHI as part of an educational exercise at the <b><a href="https://mmimontbeliard.com/" class="footer__link">MMi department of Montbéliard</a></b>.</p>
+        </div>
+    </footer>
+    <!-- Fin du pied de page -->
+
+</body>
+</html>

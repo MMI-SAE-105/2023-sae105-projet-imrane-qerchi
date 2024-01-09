@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unclouded by hate - Un regard sans haine</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body x-data="{ atTop: true }">
+    <!-- En-tête de la page -->
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img src="/public/icones/logo.svg" alt="Logo du site Web" class="header__logo">
+            </a>
+        </div>
+
+        <a href="/fr/articles/replique.html" class="lang__button">FR</a>
+
+        <div class="header__end">
+
+            <!-- Menu principal -->
+            
+            <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/quote.html">The quote -<br>Unclouded by hate</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/movie.html">The movie -<br><i>Princess Mononoke</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/director.html">The director -<br>Hayao Miyazaki</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/music.html">The music -<br><i>Hime</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/book.html">The book -<br><i>Vinland Saga</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/beyond.html">Beyond</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+
+        </div>
+
+    </header>
+    <!-- Fin de l'en-tête de page -->
+    
+    <!-- Contenu principal -->
+    <main>
+        <header class="top">
+            <h2 class="top__title">The quote -<br>Unclouded by hate</h2>
+            <p class="top__introduction">The quote "To see with eyes unclouded by hate" from "Princess Mononoke" encapsulates the main characters' journey, Ashitaka to overcome hatred in a world filled with conflict.</p>
+        </header>
+
+        <section class="article">
+            <div>
+                <h5 class="article__subtitle">Context</h5>
+                <hr class="article__separator"> 
+                <p class="article__texte">When faced with Lady Eboshi's question about what he's doing in her territory, Ashitaka res-ponds that he must see with eyes unclouded by hate. This response he gives her is inspired by the village elder who, at the beginning of the film, entrusts him with the mission of finding the Forest Spirit and, in the process, looking at the world with eyes unclouded by hate. This mission is assigned to him because he has been infected by a demon that is slowly consuming his body.</p>
+            </div>
+
+            <div>
+                <figure class="article__figure">
+                <img src="/public/img/quote_miniature.webp" alt="Photo article citation" class="article__image">
+                <figcaption class="article__description">Ashitaka and the demon that eats him</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h5 class="article__subtitle" >Impact of the quote</h5>
+                <hr class="article__separator">
+                <p class="article__texte">Throughout the film, Ashitaka strives to view the world without hatred, going so far as to see it without any filters. The film doesn't play on the dichotomy between good and evil, or ra-ther, it does so effectively that it becomes almost invisible. The message of the work is deeper than simply good humans and kind nature.</p>
+                <p class="article__texte">All the characters have their own goals, values, and motivations that justify their actions. For example, Lady Eboshi is not acting "against the forest" out of pure sadism but to protect her people, honest farmers and artisans, women, lepers, children, and so on. Her only way to achieve this is by engaging in a battle against the forest animals. On the other hand, Lord Okkoto, the boar god of the South Island, fights against the same Lady Eboshi because she is causing the destruction of his environment. Both characters are pursuing their own perceived good, and the viewer has empathy for both, even though they may sometimes employ disho-nest means to do so.</p>
+                <p class="article__texte">It is through these characters that we come to realize Ashitaka's integrity and exceptional cha-racter. While the world he knows is falling apart, the gods are dying, and men are killing each other, he manages to maintain a critical perspective on it all.</p>
+            </div>
+
+            <a href="https://blogs.mediapart.fr/lucie-conjard/blog/120815/porter-sur-le-monde-un-regard-sans-haine-miyazaki-artisan-du-neguanthropocene" class="article__link">For more informations about the quote.</a>
+
+            <br>
+
+            <a href="/en/articles/movie.html" class="article__button">The movie -<br>Princess Mononoke</a>
+        </section>
+
+    </main>
+    <!-- Fin du contenu principal -->
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        
+        <img src="/public/icones/logo.svg" alt="Logo du site Web" class="footer__logo">
+        <hr class="footer__separator">
+
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a href="/en/about.html">About us</a></li>
+                <li><a href="/en/contact.html">Contact</a></li>
+                <li><a href="/en/other_projects.html">Other projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <p class="footer__contact">To contact me : <b><a href="mailto:imrane.qerchi@edu.univ-fcomte.fr" class="footer__link">imrane.qerchi@edu.univ-fcomte.fr</a></b></p>
+            <img src="/public/icones/logo_mmi.png" alt="Logo du BUT MMi" class="footer__icon">
+            <p class="footer__contact">Project carried out by Imrane QERCHI as part of an educational exercise at the <b><a href="https://mmimontbeliard.com/" class="footer__link">MMi department of Montbéliard</a></b>.</p>
+        </div>
+    </footer>
+    <!-- Fin du pied de page -->
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unclouded by hate - Princesse Mononoké</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body x-data="{ atTop: true }">
+    <!-- En-tête de la page -->
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img src="/public/icones/logo.svg" alt="Logo du site Web" class="header__logo">
+            </a>
+        </div>
+
+        <a href="/fr/articles/film.html" class="lang__button">FR</a>
+
+        <div class="header__end">
+
+            <!-- Menu principal -->
+            
+            <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/quote.html">The quote -<br>Unclouded by hate</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/movie.html">The movie -<br><i>Princess Mononoke</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/director.html">The director -<br>Hayao Miyazaki</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/music.html">The music -<br><i>Hime</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/book.html">The book -<br><i>Vinland Saga</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/beyond.html">Beyond</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+
+        </div>
+
+    </header>
+    <!-- Fin de l'en-tête de page -->
+
+    <!-- Contenu principal -->
+    <main>
+        <header class="top">
+            <h2 class="top__title">The movie -<br><i>Princess Mononoke</i></h2>
+            <p class="top__introduction">Hayao Miyazaki's film "Princess Mononoke" delves into profound themes like nature, coexis-tence, and the complexity of characters in medieval Japan, delivering a non-dualistic narrative.</p>
+        </header>
+
+        <section class="article">
+            <div>
+                <h5 class="article__subtitle">Introduction</h5>
+                <hr class="article__separator"> 
+                <p class="article__texte">Princess Mononoke was released on July 12, 1997, after three long years of pre-production. The film is directed by Hayao Miyazaki and produced by the Ghibli studio. It tells the epic tale of Prince Ashitaka, who becomes infected by an unknown curse.</p>
+            </div>
+
+            <div>
+                <figure class="article__figure">
+                <img src="/public/img/japanese_poster.webp" alt="Photo article film" class="article__image">
+                <figcaption class="article__description">Japanese poster of the movie</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h5 class="article__subtitle">History of the movie</h5>
+                <hr class="article__separator">
+                <p class="article__texte">He must then seek out the Forest Spirit, the deity of life and death, in order to find a cure. During his journey, the young prince bears witness to supernatural events.</p>
+                <p class="article__texte">From the rebellion of Lord Okkoto's boars against the humans to his encounter with Sanji, a girl raised by wolves, Ashitaka must fulfill his mission.</p>
+                <p class="article__texte">The film is set in medieval Japan, specifically during the Muromachi era. Despite this, it pro-minently features female characters such as Lady Eboshi and Sanji, who are fully-fledged pro-tagonists. As a result, the work can be considered feminist, and this is not the only area where Miyazaki takes a stand. Throughout the film, the director aims to convey ecological, pacifist, and tolerant messages, among others.</p>
+                <p class="article__texte">The film achieved worldwide success, both in terms of box-office earnings and critical ac-claim. It grossed over 159 million dollars for Studio Ghibli and became one of its cornerstone works. Today, this work is deeply rooted in pop culture and enjoys a certain prestige.</p>
+            </div>
+
+            <a href="https://blogs.mediapart.fr/lucie-conjard/blog/120815/porter-sur-le-monde-un-regard-sans-haine-miyazaki-artisan-du-neguanthropocene" class="article__link">For more informations about the movie.</a>
+
+            <br>
+
+            <a href="/en/articles/quote.html" class="article__button__back">The quote -<br>Unclouded by hate
+                <img src="/public/icones/arrowLine.svg" alt="Flèche bouton retour" class="back__arrow"></a>
+            <a href="/en/articles/director.html" class="article__button">The director -<br>Hayao Miyazaki
+                <img src="/public/icones/arrowLine.svg" alt="Flèche bouton" class="classic__arrow"></a>
+        </section>
+
+    </main>
+    <!-- Fin du contenu principal -->
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        
+        <img src="/public/icones/logo.svg" alt="Logo du site Web" class="footer__logo">
+        <hr class="footer__separator">
+
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a href="/en/about.html">About us</a></li>
+                <li><a href="/en/contact.html">Contact</a></li>
+                <li><a href="/en/other_projects.html">Other projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <p class="footer__contact">To contact me : <b><a href="mailto:imrane.qerchi@edu.univ-fcomte.fr" class="footer__link">imrane.qerchi@edu.univ-fcomte.fr</a></b></p>
+            <img src="/public/icones/logo_mmi.png" alt="Logo du BUT MMi" class="footer__icon">
+            <p class="footer__contact">Project carried out by Imrane QERCHI as part of an educational exercise at the <b><a href="https://mmimontbeliard.com/" class="footer__link">MMi department of Montbéliard</a></b>.</p>
+        </div>
+    </footer>
+    <!-- Fin du pied de page -->
+
+</body>
+</html>

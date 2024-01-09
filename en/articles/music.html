@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unclouded by hate - Hime</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body x-data="{ atTop: true }">
+    <!-- En-tête de la page -->
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img src="/public/icones/logo.svg" alt="Logo du site Web" class="header__logo">
+            </a>
+        </div>
+
+        <a href="/fr/articles/musique.html" class="lang__button">FR</a>
+
+        <div class="header__end">
+
+            <!-- Menu principal -->
+            
+            <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/quote.html">The quote -<br>Unclouded by hate</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/movie.html">The movie -<br><i>Princess Mononoke</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/director.html">The director -<br>Hayao Miyazaki</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/music.html">The music -<br><i>Hime</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/book.html">The book -<br><i>Vinland Saga</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/beyond.html">Beyond</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+
+        </div>
+
+    </header>
+    <!-- Fin de l'en-tête de page -->
+    
+    <!-- Contenu principal -->
+    <main>
+        <header class="top">
+            <h2 class="top__title">The music -<br>Hime</h2>
+            <p class="top__introduction">Joe Hisaishi's "Hime" music accompanies both the characters and viewers of "Princess Mono-noke", conveying the hero's quest for a gaze without hatred, providing a sense of serenity.</p>
+        </header>
+
+        <section class="article">
+            <div>
+                <h5 class="article__subtitle">Introduction</h5>
+                <hr class="article__separator"> 
+                <p class="article__texte">Tout au long de l’œuvre, les musiques de Joe Hisaishi accompagnent autant le spectateur que les protagonistes. Celle qui retient particulièrement notre attention est <i>Hime</i>.</p>
+            </div>
+
+            <div>
+                <figure class="article__figure">
+                <img src="/public/img/music_miniature.webp" alt="Photo article musique" class="article__image">
+                <figcaption class="article__description">Joe Hisaishi à la Philarmonie, Paris</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <p class="article__texte">Cette musique reflète l’ambiance du film de manière générale et permet de traduire la citation « Je dois porter sur le monde un regard sans haine. » sur le plan musical. En écoutant le titre, on a cette impression d’apaisement que doit ressentir Ashitaka et tous les problèmes deviennent alors secondaires. Sur le plan technique, le titre est réalisé par un orchestre philarmonique mais l’on ressent surtout la présence du piano, de violons et d’une chanteuse.</p>
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=3jdjZR3X1cE" class="article__link">To listen Hime.</a>
+
+            <br>
+
+            <a href="/en/articles/director.html" class="article__button__back">The director -<br>Hayao Miyazaki</a>
+            <a href="/en/articles/book.html" class="article__button">The book -<br><i>Vinland Saga</i></a>
+        </section>
+
+    </main>
+    <!-- Fin du contenu principal -->
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        
+        <img src="/public/icones/logo.svg" alt="Logo du site Web" class="footer__logo">
+        <hr class="footer__separator">
+
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a href="/en/about.html">About us</a></li>
+                <li><a href="/en/contact.html">Contact</a></li>
+                <li><a href="/en/other_projects.html">Other projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <p class="footer__contact">To contact me : <b><a href="mailto:imrane.qerchi@edu.univ-fcomte.fr" class="footer__link">imrane.qerchi@edu.univ-fcomte.fr</a></b></p>
+            <img src="/public/icones/logo_mmi.png" alt="Logo du BUT MMi" class="footer__icon">
+            <p class="footer__contact">Project carried out by Imrane QERCHI as part of an educational exercise at the <b><a href="https://mmimontbeliard.com/" class="footer__link">MMi department of Montbéliard</a></b>.</p>
+        </div>
+    </footer>
+    <!-- Fin du pied de page -->
+
+</body>
+</html>

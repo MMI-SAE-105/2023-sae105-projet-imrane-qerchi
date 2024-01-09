@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unclouded by hate - Hayao Miyazaki</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body x-data="{ atTop: true }">
+    <!-- En-tête de la page -->
+    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img src="/public/icones/logo.svg" alt="Logo du site Web" class="header__logo">
+            </a>
+        </div>
+
+        <a href="/fr/articles/realisateur.html" class="lang__button">FR</a>
+
+        <div class="header__end">
+
+            <!-- Menu principal -->
+            
+            <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/quote.html">The quote -<br>Unclouded by hate</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/movie.html">The movie -<br><i>Princess Mononoke</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/director.html">The director -<br>Hayao Miyazaki</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/music.html">The music -<br><i>Hime</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/articles/book.html">The book -<br><i>Vinland Saga</i></a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/beyond.html">Beyond</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+
+        </div>
+
+    </header>
+    <!-- Fin de l'en-tête de page -->
+    
+    <!-- Contenu principal -->
+    <main>
+        <header class="top">
+            <h2 class="top__title">The director -<br>Hayao Miyazaki</h2>
+            <p class="top__introduction">Japanese director Hayao Miyazaki started as an illustrator and founded Studio Ghibli, infu-sing ecological and pacifist themes into his works, leaving a lasting impact on Japanese animation.</p>
+        </header>
+
+        <section class="article">
+            <div>
+                <h5 class="article__subtitle">Introduction</h5>
+                <hr class="article__separator"> 
+                <p class="article__texte">Hayao Miyazaki is, among other things, a Japanese director, animator, and producer. He was born in Tokyo in 1941 and grew up in an affluent environment. His passion for animation began in childhood, and he was already drawing, albeit with difficulties. He admitted that he wasn't a skilled artist and excelled only in creating airplanes or tanks.</p>
+            </div>
+
+            <div>
+                <figure class="article__figure">
+                <img src="/public/img/director_miniature.webp" alt="Photo article réalisateur" class="article__image__book">
+                <figcaption class="article__description">Hayao Miyazaki receiving his honorary Oscar</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h5 class="article__subtitle">Early career</h5>
+                <hr class="article__separator">
+                <p class="article__texte">At the end of high school, he discovered "The White Snake" by Taiji Yabushita and Kazuhiko Okabe and was so moved by the film that he watched it in all his spare time, even neglecting his exam preparations. However, the young Miyazaki lacked the determination to pursue his passion and went on to study political science and economics, ultimately graduating in 1963.</p>
+                <p class="article__texte">Nevertheless, he managed to secure a position at Toei, a renowned Japanese animation stu-dio. He started at the bottom as an in-betweener but was content with it because he had the opportunity to work with his idols. He steadily climbed the ranks at Toei before leaving the company to join A Production in 1971, Nippon Animation in 1973, Telecom Animation Film in 1979, and finally, Topcraft in 1983.</p>
+                <p class="article__texte">Throughout his career at the aforementioned animation studios, Hayao Miyazaki worked on a number of films such as "Lupin III," "The Castle of Cagliostro," and various series and litera-ry works, some more recognized than others. He notably wrote and illustrated "Nausicaä of the Valley of the Wind," which he later adapted with Topcraft.</p>
+            </div>
+
+            <div>
+                <h5 class="article__subtitle">The Ghibli studio</h5>
+                <hr class="article__separator">
+                <p class="article__texte">Following the success of this film, Miyazaki, along with Takahata, Tokuma, and Suzuki, founded the now-famous Studio Ghibli. The studio allowed Miyazaki to achieve the fame he had hoped for. From the drawing boards of the director came masterpieces like "My Neigh-bor Totoro," "Howl's Moving Castle," "Spirited Away," and, most importantly, "Princess Mo-nonoke.".</p>
+                <p class="article__texte">Through his films, Miyazaki emphasizes certain themes close to his heart: feminism, nature, aviation, and war. His dedication and the profound themes in his works earned him an ho-norary Oscar in 2009. "Princess Mononoke" was the first from the studio to achieve global success, propelling Miyazaki and his team onto the international stage. Despite the many reti-rements, Hayao continues to make films to this day, with his most recent work being "The Boy and the Heron," released on November 1, 2023.</p>
+            </div>
+
+            <a href="https://fr.wikipedia.org/wiki/Hayao_Miyazaki" class="article__link">For more informations about Hayao Miyazaki.</a>
+
+            <br>
+
+            <a href="/en/articles/movie.html" class="article__button__back">The movie -<br><i>Princess Mononoke</i></a>
+            <a href="/en/articles/music.html" class="article__button">The music -<br><i>Hime</i></a>
+        </section>
+
+    </main>
+    <!-- Fin du contenu principal -->
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        
+        <img src="/public/icones/logo.svg" alt="Logo du site Web" class="footer__logo">
+        <hr class="footer__separator">
+
+        <nav class="footer__menu">
+            <ul class="list-unstyled">
+                <li><a href="/en/about.html">About us</a></li>
+                <li><a href="/en/contact.html">Contact</a></li>
+                <li><a href="/en/other_projects.html">Other projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <p class="footer__contact">To contact me : <b><a href="mailto:imrane.qerchi@edu.univ-fcomte.fr" class="footer__link">imrane.qerchi@edu.univ-fcomte.fr</a></b></p>
+            <img src="/public/icones/logo_mmi.png" alt="Logo du BUT MMi" class="footer__icon">
+            <p class="footer__contact">Project carried out by Imrane QERCHI as part of an educational exercise at the <b><a href="https://mmimontbeliard.com/" class="footer__link">MMi department of Montbéliard</a></b>.</p>
+        </div>
+    </footer>
+    <!-- Fin du pied de page -->
+
+</body>
+</html>
