@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
 - NOM : QERCHI
 - PRÉNOM : Imrane
-- URL du site : https://master--quiet-daifuku-f99cbd.netlify.app/fr/
+- URL du site :https://uncloudedbyhate.imrane-qerchi.fr/
 - URL FIGMA : https://www.figma.com/file/I7eR7oyeJLikHueCNY0urq/Maquettes-projet-individuel-%E2%80%94-Imrane-QERCHI?type=design&node-id=0%3A1&mode=design&t=zrEno6Q9kUQPOLzW-1
 
 # Structure de départ pour le projet individuel.
