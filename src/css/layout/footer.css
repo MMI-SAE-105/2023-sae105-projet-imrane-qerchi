@@ -28,6 +28,11 @@
     font-size: 13px;
   }
 
+.footer__link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .footer__icon {
     height: 50px;
   }
