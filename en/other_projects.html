@@ -53,141 +53,141 @@
 
         <p class="article__texte">This website is a project created as part of an educational exercise at the MMi department of Montbéliard, similar to these other projects :</p>
 
-    <section x-data="{hrefCourant: '#ecran-1',}" class="ap__section">
+        <section x-data="{hrefCourant: '#ecran-1',}" class="ap__section">
 
-        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-        <!-- Card pour Angelo BOSETTI -->
-        <div id="ecran-1" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/angelo.svg" alt="avatar">
-                <h2 class="ap__project__title">The long line</h2>
-                <h3 class="ap__project__name">Angelo BOSETTI</h3>
-            </a>
-            <hr>
-        </div>
-
-        <!-- Card pour Samuel CHARASSE -->
-        <div id="ecran-2" class="ap__card">
-            <a href="/public/icones/samuel.svg">
-                <img src="#" alt="avatar">
-                <h2 class="ap__project__title">Abyssal Wave</h2>
-                <h3 class="ap__project__name">Samuel CHARASSE</h3>
-            </a>
-            <hr>
-        </div>
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+            <!-- Card pour Angelo BOSETTI -->
+            <div id="ecran-1" class="ap__card">
+                <a href="http://the-long-line.angelo-bosetti.fr">
+                    <img src="/public/icones/angelo.svg" alt="avatar">
+                    <h2 class="ap__project__title">The long line</h2>
+                    <h3 class="ap__project__name">Angelo BOSETTI</h3>
+                </a>
+                <hr>
+            </div>
     
-        <!-- Card pour Rayane DAMAGE -->
-        <div id="ecran-3" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/rayane.svg" alt="avatar">
-                <h2 class="ap__project__title">Across the spider-web</h2>
-                <h3 class="ap__project__name">Rayane DAMAGE</h3>
-            </a>
-            <hr>
-        </div>
+            <!-- Card pour Samuel CHARASSE -->
+            <div id="ecran-2" class="ap__card">
+                <a href="/public/icones/samuel.jpg">
+                    <img src="#" alt="avatar">
+                    <h2 class="ap__project__title">Abyssal Wave</h2>
+                    <h3 class="ap__project__name">Samuel CHARASSE</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Rayane DAMAGE -->
+            <div id="ecran-3" class="ap__card">
+                <a href="https://across-the-spider-web.rdamage.fr/">
+                    <img src="/public/icones/rayane.svg" alt="avatar">
+                    <h2 class="ap__project__title">Across the spider-web</h2>
+                    <h3 class="ap__project__name">Rayane DAMAGE</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Pierre GACHOD -->
+            <div id="ecran-3" class="ap__card">
+                <a href="https://lepianiste.pierre-gachod.fr/">
+                    <img src="/public/icones/pierre.svg" alt="avatar">
+                    <h2 class="ap__project__title">Le Pianiste</h2>
+                    <h3 class="ap__project__name">Pierre GACHOD</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Liloue GUYOT -->
+            <div id="ecran-4" class="ap__card">
+                <a href="#">
+                    <img src="/public/icones/liloue.svg" alt="avatar">
+                    <h2 class="ap__project__title">Ton avenir est entre tes mains</h2>
+                    <h3 class="ap__project__name">Liloue GUYOT</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Tasnim KEBAILI -->
+            <div id="ecran-5" class="ap__card">
+                <a href="#">
+                    <img src="/public/icones/tasnim.svg" alt="avatar">
+                    <h2 class="ap__project__title">Hakuna Matata</h2>
+                    <h3 class="ap__project__name">Tasnim KEBAILI</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Mathis LIEGEON -->
+            <div id="ecran-6" class="ap__card">
+                <a href="#">
+                    <img src="/public/icones/mathis.svg" alt="avatar">
+                    <h2 class="ap__project__title">My name is Bond, James Bond</h2>
+                    <h3 class="ap__project__name">Mathis LIEGEON</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Logan MARTINEZ -->
+            <div id="ecran-7" class="ap__card">
+                <a href="http://soserious.logan-martinez.fr">
+                    <img src="/public/icones/logan.svg" alt="avatar">
+                    <h2 class="ap__project__title">Apagnan</h2>
+                    <h3 class="ap__project__name">Logan MARTINEZ</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Tony MORETTI -->
+            <div id="ecran-8" class="ap__card">
+                <a href="http://oppenheimer.tonymoretti.fr">
+                    <img src="/public/icones/tony.svg" alt="avatar">
+                    <h2 class="ap__project__title">Oppenheimer</h2>
+                    <h3 class="ap__project__name">Tony MORETTI</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Marion PAUTRAT -->
+            <div id="ecran-9" class="ap__card">
+                <a href="#">
+                    <img src="/public/icones/marion.svg" alt="avatar">
+                    <h2 class="ap__project__title">Kill This Rabbit</h2>
+                    <h3 class="ap__project__name">Marion PAUTRAT</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Jérémy ROY -->
+            <div id="ecran-10" class="ap__card">
+                <a href="https://mordors-direction.j-roy.fr/fr/">
+                    <img src="/public/icones/jeremy.svg" alt="avatar">
+                    <h2 class="ap__project__title">Mordor's Direction</h2>
+                    <h3 class="ap__project__name">Jérémy ROY</h3>
+                </a>
+                <hr>
+            </div>
     
-        <!-- Card pour Pierre GACHOD -->
-        <div id="ecran-3" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/pierre.svg" alt="avatar">
-                <h2 class="ap__project__title">Le Pianiste</h2>
-                <h3 class="ap__project__name">Pierre GACHOD</h3>
-            </a>
-            <hr>
-        </div>
+            <!-- Card pour Oliventhan THAMILSELVAN -->
+            <div id="ecran-11" class="ap__card">
+                <a href="https://impossible-to-be-her.thamilselvan.fr/">
+                    <img src="/public/icones/oliventhan.svg" alt="avatar">
+                    <h2 class="ap__project__title">Apagnan</h2>
+                    <h3 class="ap__project__name">Oliventhan THAMILSELVAN</h3>
+                </a>
+                <hr>
+            </div>
+        
+            <!-- Card pour Kalan YILMAZ -->
+            <div id="ecran-12" class="ap__card">
+                <a href="#">
+                    <img src="/public/icones/kalan.svg" alt="avatar">
+                    <h2 class="ap__project__title">OppenMind</h2>
+                    <h3 class="ap__project__name">Kalan YILMAZ</h3>
+                </a>
+                <hr>
+            </div>
+            </div>
     
-        <!-- Card pour Liloue GUYOT -->
-        <div id="ecran-4" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/liloue.svg" alt="avatar">
-                <h2 class="ap__project__title">Ton avenir est entre tes mains</h2>
-                <h3 class="ap__project__name">Liloue GUYOT</h3>
-            </a>
-            <hr>
-        </div>
-    
-        <!-- Card pour Tasnim KEBAILI -->
-        <div id="ecran-5" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/tasnim.svg" alt="avatar">
-                <h2 class="ap__project__title">Hakuna Matata</h2>
-                <h3 class="ap__project__name">Tasnim KEBAILI</h3>
-            </a>
-            <hr>
-        </div>
-    
-        <!-- Card pour Mathis LIEGEON -->
-        <div id="ecran-6" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/mathis.svg" alt="avatar">
-                <h2 class="ap__project__title">My name is Bond, James Bond</h2>
-                <h3 class="ap__project__name">Mathis LIEGEON</h3>
-            </a>
-            <hr>
-        </div>
-    
-        <!-- Card pour Logan MARTINEZ -->
-        <div id="ecran-7" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/logan.svg" alt="avatar">
-                <h2 class="ap__project__title">Apagnan</h2>
-                <h3 class="ap__project__name">Logan MARTINEZ</h3>
-            </a>
-            <hr>
-        </div>
-    
-        <!-- Card pour Tony MORETTI -->
-        <div id="ecran-8" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/tony.svg" alt="avatar">
-                <h2 class="ap__project__title">Oppenheimer</h2>
-                <h3 class="ap__project__name">Tony MORETTI</h3>
-            </a>
-            <hr>
-        </div>
-    
-        <!-- Card pour Marion PAUTRAT -->
-        <div id="ecran-9" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/marion.svg" alt="avatar">
-                <h2 class="ap__project__title">Kill This Rabbit</h2>
-                <h3 class="ap__project__name">Marion PAUTRAT</h3>
-            </a>
-            <hr>
-        </div>
-    
-        <!-- Card pour Jérémy ROY -->
-        <div id="ecran-10" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/jeremy.svg" alt="avatar">
-                <h2 class="ap__project__title">Mordor's Direction</h2>
-                <h3 class="ap__project__name">Jérémy ROY</h3>
-            </a>
-            <hr>
-        </div>
-
-        <!-- Card pour Oliventhan THAMILSELVAN -->
-        <div id="ecran-11" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/oliventhan.svg" alt="avatar">
-                <h2 class="ap__project__title">Apagnan</h2>
-                <h3 class="ap__project__name">Oliventhan THAMILSELVAN</h3>
-            </a>
-            <hr>
-        </div>
-    
-        <!-- Card pour Kalan YILMAZ -->
-        <div id="ecran-12" class="ap__card">
-            <a href="#">
-                <img src="/public/icones/kalan.svg" alt="avatar">
-                <h2 class="ap__project__title">OppenMind</h2>
-                <h3 class="ap__project__name">Kalan YILMAZ</h3>
-            </a>
-            <hr>
-        </div>
-        </div>
-
-    </section>
+        </section>
     
     </main>
       
