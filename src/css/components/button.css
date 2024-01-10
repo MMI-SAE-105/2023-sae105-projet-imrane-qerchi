@@ -4,13 +4,14 @@
     font-size: 12px;
     text-align: center;
     text-decoration: none;
-    padding: 2px 3px;
+    padding: 7px 10px;
     border: 1px solid black;
     place-items: center;
-    gap: 2px;
+    gap: 10px;
     transition: all .3s ease-in-out;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    display: flex;
 }
 
 .article__button__back {
@@ -19,15 +20,32 @@
     font-size: 12px;
     text-align: center;
     text-decoration: none;
-    padding: 2px 3px;
+    padding: 7px 10px;
     border: 1px solid black;
     place-items: center;
-    gap: 2px;
+    gap: 10px;
     transition: all .3s ease-in-out;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+
+    display: flex;
 }
 
+.article__button-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+.article__button-text {
+    margin: 0;
+}
 
 .back__arrow {
     rotate: 180deg;

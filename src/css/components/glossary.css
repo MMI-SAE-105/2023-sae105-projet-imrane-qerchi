@@ -1,0 +1,20 @@
+.glossary__card {
+    background-color: #5890C4;
+    border : 1px;
+    margin: 20px;
+    border-radius: 10px;
+    padding : 6px
+  }
+
+  .glossary__card2 {
+    background-color: #28634F;
+    border : 1px;
+    margin: 20px;
+    border-radius: 10px;
+    padding : 6px
+  }
+
+.glossary__text {
+    margin-top: 0px;
+    
+  }

@@ -3,6 +3,9 @@ img {
     height: auto;
   }
 
+  video {
+    width: 90%;
+  }
 
   .article__figure {
     margin: 10px;
@@ -10,3 +13,10 @@ img {
     font-style: italic;
     margin-bottom: 20px;
   }
+
+.bande-annonce {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
