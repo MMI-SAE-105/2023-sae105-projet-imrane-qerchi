@@ -63,7 +63,7 @@ h6 {
     padding-top: 10px;
 }
 
-h7 {
+.glossary__title {
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
     font-size: 18px;
