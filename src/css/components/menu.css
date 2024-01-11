@@ -8,7 +8,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: black;
+  background-color: white;
   transition: all .4s ease-in-out;
 }
 
@@ -22,7 +22,7 @@
 
 
 .menu__list {
-  margin-top: 5vh;
+  margin-top: -10px;
   margin-left: 10vw;
   margin-right: 10vw;
   color: white;
@@ -34,7 +34,7 @@
 }
 
 .menu__link {
-  color: black;
+  color: white;
   text-decoration: none;
   line-height: 1;
   font-family: 'Mulish', sans-serif;
@@ -56,7 +56,7 @@
 .menu-btn__bar::before,
 .menu-btn__bar::after {
   content: '';
-  background: black;
+  background: white;
   height: 3px;
   width: 100%;
   position: absolute;
@@ -90,7 +90,7 @@
 .menu-btn:not(.menu-btn--open) .menu-btn__bar,
 .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
 .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
-  background-color: black;
+  background-color: white;
 }
 
 .menu__item_primary {
@@ -105,4 +105,5 @@
   font-size: 22px;
   margin-right: -140px;
   margin-top: 7%;
+  color: white;
 }
