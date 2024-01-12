@@ -7,51 +7,6 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
-<body x-data="{ atTop: true }">
-    <!-- En-tête de la page -->
-    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
-
-        <div class="header__start">
-            <a href="/en/index.html">
-                <img src="/public/icones/logo.svg" alt="Logo du site Web" class="header__logo">
-            </a>
-        </div>
-
-        <a href="/fr/autres_projets.html" class="lang__button">FR</a>
-
-        <div class="header__end">
-
-            <!-- Menu principal -->
-            
-            <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
-            <span class="menu-btn__bar"></span>
-            </button>
-
-            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-                <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="/en/articles/quote.html">The quote -<br>Unclouded by hate</a></li>
-                    <li class="menu__item"><a class="menu__link" href="/en/articles/movie.html">The movie -<br><i>Princess Mononoke</i></a></li>
-                    <li class="menu__item"><a class="menu__link" href="/en/articles/director.html">The director -<br>Hayao Miyazaki</a></li>
-                    <li class="menu__item"><a class="menu__link" href="/en/articles/music.html">The music -<br><i>Hime</i></a></li>
-                    <li class="menu__item"><a class="menu__link" href="/en/articles/book.html">The book -<br><i>Vinland Saga</i></a></li>
-                    <li class="menu__item"><a class="menu__link" href="/en/beyond.html">Beyond</a></li>
-                    <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
-                </ul>
-            </nav>
-            <!-- Fin du menu principal -->
-
-        </div>
-
-    </header>
-    <!-- Fin de l'en-tête de page -->
-
-    <main>
-        <header class="top">
-            <h2 class="top__title">Other projects</h2>
-        </header>
-
-        <p class="article__texte">This website is a project created as part of an educational exercise at the MMi department of Montbéliard, similar to these other projects :</p>
 
         <section x-data="{hrefCourant: '#ecran-1',}" class="ap__section">
 
@@ -65,17 +20,17 @@
                 </a>
                 <hr>
             </div>
-    
+        
             <!-- Card pour Samuel CHARASSE -->
             <div id="ecran-2" class="ap__card">
-                <a href="/public/icones/samuel.jpg">
-                    <img src="#" alt="avatar">
+                <a href="https://abyssal-wave.scharasse.fr/">
+                    <img src="/public/icones/samuel.svg" alt="avatar">
                     <h2 class="ap__project__title">Abyssal Wave</h2>
                     <h3 class="ap__project__name">Samuel CHARASSE</h3>
                 </a>
                 <hr>
             </div>
-        
+
             <!-- Card pour Rayane DAMAGE -->
             <div id="ecran-3" class="ap__card">
                 <a href="https://across-the-spider-web.rdamage.fr/">
@@ -118,7 +73,7 @@
         
             <!-- Card pour Mathis LIEGEON -->
             <div id="ecran-6" class="ap__card">
-                <a href="#">
+                <a href="https://sae105.mathisliegeon.fr">
                     <img src="/public/icones/mathis.svg" alt="avatar">
                     <h2 class="ap__project__title">My name is Bond, James Bond</h2>
                     <h3 class="ap__project__name">Mathis LIEGEON</h3>
@@ -130,7 +85,7 @@
             <div id="ecran-7" class="ap__card">
                 <a href="http://soserious.logan-martinez.fr">
                     <img src="/public/icones/logan.svg" alt="avatar">
-                    <h2 class="ap__project__title">Apagnan</h2>
+                    <h2 class="ap__project__title">So Serious</h2>
                     <h3 class="ap__project__name">Logan MARTINEZ</h3>
                 </a>
                 <hr>
@@ -165,12 +120,12 @@
                 </a>
                 <hr>
             </div>
-    
+
             <!-- Card pour Oliventhan THAMILSELVAN -->
             <div id="ecran-11" class="ap__card">
                 <a href="https://impossible-to-be-her.thamilselvan.fr/">
                     <img src="/public/icones/oliventhan.svg" alt="avatar">
-                    <h2 class="ap__project__title">Apagnan</h2>
+                    <h2 class="ap__project__title">Impossible to be her</h2>
                     <h3 class="ap__project__name">Oliventhan THAMILSELVAN</h3>
                 </a>
                 <hr>
@@ -178,7 +133,7 @@
         
             <!-- Card pour Kalan YILMAZ -->
             <div id="ecran-12" class="ap__card">
-                <a href="#">
+                <a href="https://oppenmind.kalan-yilmaz.fr">
                     <img src="/public/icones/kalan.svg" alt="avatar">
                     <h2 class="ap__project__title">OppenMind</h2>
                     <h3 class="ap__project__name">Kalan YILMAZ</h3>
@@ -186,9 +141,9 @@
                 <hr>
             </div>
             </div>
-    
+
         </section>
-    
+
     </main>
       
     <!-- Pied de page -->
